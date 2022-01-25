@@ -22,8 +22,8 @@
             100% {background-color: #000}
         }
         @keyframes fade_to_white{
-            0% {stroke: #000;color: #000;}
-            100% {stroke: #e7e7e7; color: #e7e7e7;}
+            0% {stroke: #000;color: #000;opacity: 100;}
+            100% {stroke: #e7e7e7; color: #e7e7e7;opacity: 100;}
         }
         * {
             margin: 0;
@@ -49,11 +49,12 @@
             transform: translateY(200px);
             animation: moon_rising 1.0s ease-in-out 1s forwards, fade_to_yellow 1s ease-in-out 2.8s forwards;
         }
-        .footer_text{
+        .footer_text h1{
+            opacity: 0;
             font-weight: 100;
-            color: #e7e7e7;
+            animation: fade_to_white 1.2s ease-in-out 4.5s forwards;
             position: absolute;
-            font-size: 1em;
+            font-size: 2.4vh;
             font-family: 'Quicksand', sans-serif;
             left: 0px;
             bottom: 0px;
@@ -159,7 +160,7 @@
             
     </div>
     <div class="footer_text">
-        <h1>Back soon...</h1>
+        <h1>Setting things up, see you soon...</h1>
     </div>
 </body>
 
